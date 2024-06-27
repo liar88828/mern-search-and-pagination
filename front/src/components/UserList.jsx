@@ -31,7 +31,7 @@ function UserList() {
 	const changePage = ({selected}) => {
 		setPage(selected)
 		if (selected === 9) {
-			setMsg('Juka tidak menemukan data yaang anda cari cari lah di search')
+			setMsg('Jika tidak menemukan data yang anda cari cari lah di search')
 		} else {
 			setMsg('')
 		}
@@ -53,7 +53,7 @@ function UserList() {
 									<input
 											type="text"
 											className={'input'}
-											placeholder={'Find Someting here...'}
+											placeholder={'Find Something here...'}
 											value={query}
 											onChange={(e) => {
 												setQuery(e.target.value)
